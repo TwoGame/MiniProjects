@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Multiplication Client</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="center top" method='post'>
+        <label>Rows:</label>
+        <input type='number' name='rows' value='3'>
+        <label>Cols:</label>
+        <input type='number' name='cols' value='3'>
+        <button type='button' onclick='generateMatrices()'>Generate Matrices</button>
+        <form method='post' action='/multiply'>
+            <label>Matrix A:</label>
+            <textarea name='matrixA' rows='3' cols='20'></textarea><br />
+            <label>Matrix B:</label>
+            <textarea name='matrixB' rows='3' cols='20'></textarea><br />
+            <input type='submit' value='Multiply' />
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
